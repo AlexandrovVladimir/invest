@@ -1,0 +1,48 @@
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+@import 'main-full-slider'
+@import 'content'
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700')
+
+*
+	box-sizing: border-box
+	&:hover, &:active, &:focus
+		outline: none
+
+html
+	font-family: Arial, sans-serif
+	font-size: 16px
+	height: 100%
+
+body
+	margin: 0
+	padding: 0
+	position: relative
+
+ul
+	padding: 0
+	margin: 0
+	list-style: none
+
+.default-title
+  font-family: $font-montserrat
+  font-size: 32px
+  font-weight: 600
+  text-align: center
+
+.default-btn
+  background-color: $accent-color
+  border-radius: 2px
+  color: #ffffff
+  font-family: $font-montserrat
+  font-size: 18px
+  font-weight: 400
+  letter-spacing: -0.09px
+  display: inline-block
+  text-align: center
+  &:hover
+    color: #ffffff
+    text-decoration: none
+
+@import "media"
